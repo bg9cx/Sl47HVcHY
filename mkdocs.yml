@@ -1,0 +1,120 @@
+site_name: Crucible Documentation
+site_description: "CRUCIBLE is an open-source application framework for creating and managing virtual environments and events."
+site_author: "Crucible Team"
+copyright: >
+  Copyright &copy; 2024 Carnegie Mellon University. All rights reserved.
+extra_css:
+  - stylesheets/extra.css
+theme:
+  name: material
+  custom_dir: material/overrides
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.indexes
+    - toc.integrate
+    - content.code.copy
+    - content.code.annotate
+  logo: assets/img/crucible-icon-c-alpha.svg
+  favicon: assets/img/crucible-icon-c-alpha.svg
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+      primary: red
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+      primary: red
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.details
+  - pymdownx.superfences
+  - admonition
+  - attr_list
+extra:
+  social:
+    - icon: material/message-question
+      link: https://github.com/cmu-sei/Crucible/issues/new?template=question.md
+      name: Ask a Question
+    - icon: fontawesome/solid/bug
+      link: https://github.com/cmu-sei/crucible/issues/new?template=bug_report.md
+      name: Report a Problem
+    - icon: material/lightbulb-on
+      link: https://github.com/cmu-sei/crucible/issues/new?template=feature_request.md
+      name: Request a Feature
+    - icon: fontawesome/regular/comments
+      link: https://github.com/cmu-sei/crucible/discussions
+      name: Community Discussions
+    - icon: fontawesome/brands/github
+      link: https://github.com/cmu-sei/crucible
+      name: cmu-sei/Crucible on Github
+    - icon: fontawesome/regular/envelope
+      link: mailto:info@sei.cmu.edu?subject=Crucible%20Feedback
+      name: Email Crucible Team
+    - icon: fontawesome/solid/house
+      link: https://www.sei.cmu.edu/
+      name: Software Engineering Institute
+nav:
+  - Home: index.md
+  - Player: player/index.md
+  - Caster: caster/index.md
+  - Steamfitter: steamfitter/index.md
+  - Alloy: alloy/index.md
+  - TopoMojo:
+    - About: topomojo/about.md
+    - Getting started with TopoMojo: topomojo/getting-started.md
+    - Finding an existing space: topomojo/finding-a-space.md
+    - Building a new space:
+      - Settings and Templates: topomojo/building-a-workspace.md
+      - Document: topomojo/lab-document.md
+      - Challenge: topomojo/challenge.md
+      - Files: topomojo/files.md
+      - Play: topomojo/play.md
+    - Admin features:
+      - Admin Dashboard: topomojo/admin-dashboard.md
+      - Gamespaces: topomojo/admin-gamespaces.md
+      - Workspaces: topomojo/admin-workspaces.md
+      - Templates: topomojo/admin-templates.md
+      - Machines: topomojo/admin-machines.md
+      - Users: topomojo/admin-users.md
+      - Log: topomojo/admin-log.md    
+    - Copy and paste: topomojo/copy-paste.md
+  - Gameboard:
+    - Playing games:
+      - About the Gameboard: gameboard/index.md
+      - Profile screen: gameboard/profile.md
+      - Home screen and Lobby: gameboard/home-and-lobby.md
+      - Giving feedback: gameboard/player-feedback-form.md
+      - Practicing challenges: gameboard/practice-area.md
+      - Getting in-game support: gameboard/support.md
+      - Using Reports: gameboard/reports.md
+    - Administering games: 
+      - Administration: gameboard/admin.md
+      - Game Center: gameboard/game-center.md
+      - Practice: gameboard/admin-practice-area.md
+      - Users: gameboard/admin-users.md
+      - Roles: gameboard/admin-roles.md
+      - Players: gameboard/admin-players.md
+      - Observe mode: gameboard/admin-observe.md
+      - Settings: gameboard/admin-settings.md
+      - Feedback form: gameboard/admin-feedback-form.md
+      - Configuring Certificate Templates: gameboard/completion-certificates.md     
+  - Blueprint: blueprint/index.md
+  - CITE: cite/index.md
+  - Gallery: gallery/index.md
+  - Integrations: integrations/index.md
+  - Overview Install: install/index.md
+repo_url: "https://github.com/cmu-sei/crucible"
+repo_name: "cmu-sei/Crucible"
